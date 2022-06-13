@@ -12,6 +12,7 @@ const cakeSlice = createSlice({
       state.numOfCakes--;
     },
     restocked: (state, action) => {
+      //{ type: 'cake/restocked', payload: 2 }  logger
       state.numOfCakes += action.payload;
     },
   },
